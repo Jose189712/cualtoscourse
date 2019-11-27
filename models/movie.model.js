@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const ObjectId = mongoose.Schema.ObjectId;
 
 let MovieSchema = new Schema({
-  _id: {type: ObjectId},
+  // _id: {type: ObjectId},
   plot: String,
   genres: [String],
   runtime: Number,
@@ -11,7 +11,7 @@ let MovieSchema = new Schema({
   poster: String,
   title: String,
   fullplot: String,
-  lenguages: [String],
+  languages: [String],
   released: Date,
   directors: [],
   rated: String,
@@ -42,7 +42,7 @@ let MovieSchema = new Schema({
   }
 }
 // , {
-//   collection: 'sample_mflix'
+//   collection: 'movies'
 // }
 );
 

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 exports.connnectToDB = () => {
 
   mongoose.connect(
-    'mongodb+srv://dbUser:TaU0tUuunP4DmCv5@cluster0-mjwq6.mongodb.net/test?retryWrites=true&w=majority',
+    'mongodb+srv://dbUser:TaU0tUuunP4DmCv5@cluster0-mjwq6.mongodb.net/sample_mflix?retryWrites=true&w=majority',
     //'mongodb+srv://cluster0-mjwq6.mongodb.net/sample_mflix?retryWrites=true&w=majority',
     {
       user: 'dbUser',
