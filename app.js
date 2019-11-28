@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+var cors = require('cors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -9,6 +10,8 @@ var usersRouter = require('./routes/users');
 var moviesRouter = require('./routes/movies');
 
 var app = express();
+app.use(cors());
+
 var mongoUtil = require('./utils/mongo.util');
 
 mongoUtil.connnectToDB();
